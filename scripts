@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# run node container with interactive bin/bash
+docker run -it --entrypoint /bin/bash --rm -v "$(pwd)":/app -w /app node:14-slim

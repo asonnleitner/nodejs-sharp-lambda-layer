@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-sharp-lambda-layer",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "docker run -it --entrypoint /bin/bash --rm -v \"$(pwd)\":/app -w /app node:14-slim"
+  },
+  "dependencies": {
+    "sharp": "latest"
+  },
+  "engines": {
+    "node": "14"
+  },
+  "cpu": [
+    "x64"
+  ],
+  "os": [
+    "linux"
+  ]
+}
